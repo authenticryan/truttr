@@ -37,7 +37,8 @@
 
 .bold--l {
   display: inline-block;
-  width: 40%;
+  width: 600px;
+  margin-left: 90px;
 }
 
 .bold--l--heading {
@@ -84,10 +85,60 @@
   vertical-align: middle;
 }
 
+.bold--r {
+  position: absolute;
+  left: 2650px;
+  display: inline-block;
+  width: 600px;
+  margin-right: 90px;
+  text-align: right;
+}
+
+.bold--r--heading {
+  font-size: 3.4375em;
+  font-weight: 700;
+  margin-bottom: 20px;
+  line-height: 65px;
+  letter-spacing: 1px;
+}
+
+.bold--r--content {
+  margin-top: 20px;
+  margin-bottom: 60px;
+  color: #404241;
+  font-weight: 300;
+  font-size: 1.75em;
+  line-height: 40px;
+}
+
+.bold--r--button {
+  border-radius: 0 20px 0 20px;
+  background: #009bd7;
+  display: inline-block;
+  padding: 18px 34px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 0.9375em;
+  letter-spacing: 2px;
+}
+
+.bold--r--cta {
+  position: absolute;
+  bottom: -250px;
+  right: 0;
+  font-size: 1.25em;
+  color: #404241;
+  font-weight: 700;
+  font-family: 800;
+  letter-spacing: 1px;
+}
+
+.bold--r--cta:hover {
+  color: #009bd7;
+}
+
 .br__img--dog, .br__img--journal {
-  position: relative;
-  margin-left: 10%;
-  width: 35%;
+  width: 600px;
   height: 680px;
   display: inline-block;
   vertical-align: top;
@@ -116,6 +167,8 @@
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
+  position: absolute;
+  left: 950px;
 }
 
 .br__img--journal {
@@ -123,6 +176,40 @@
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
+  left: 1700px;
+  position: absolute;
+}
+
+.becky_click > .content {
+  height: 680px;
+  -webkit-transition: height .3s;
+  transition: height .3s;
+  border-top-right-radius: 100px;
+}
+
+.becky_click .content-hidden {
+  display: inline-block !important;
+  top: 200px !important;
+}
+
+.becky_unclick > .content {
+  height: 150px;
+  -webkit-transition: height .3s;
+  transition: height .3s;
+  border-top-right-radius: 0px;
+}
+
+.br__img--dog .content-hidden {
+  display: none;
+  position: relative;
+  top: 680px;
+  color: #fff;
+  text-align: left;
+  font-size: 1.875em;
+  font-weight: 700;
+  width: 85%;
+  left: 40px;
+  transition: height .4s ease-in-out;
 }
 
 html {
@@ -359,17 +446,35 @@ body {
   font-family: "Open Sans", sans-serif;
   color: #000000;
   background-color: #fff;
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  -khtml-user-select: none;
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
 }
 
 nav {
   width: 100vw;
   height: 120px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
 main {
   width: 90%;
   padding: 60px 0 0;
   margin: auto;
+  min-height: calc(100vh - 120px);
 }
 
 h1 {
@@ -399,5 +504,6 @@ body {
   position: fixed;
   bottom: 0;
   left: 0;
+  width: 3350px;
 }
 /*# sourceMappingURL=application.css.map */

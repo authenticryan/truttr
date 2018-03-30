@@ -1,0 +1,39 @@
+// becky under module/ becky
+
+.becky_click {
+    & > .content {
+        height: 680px;
+        -webkit-transition: height .3s;
+        transition: height .3s;
+        border-top-right-radius: 100px;
+    }
+
+    & .content-hidden{
+        display: inline-block !important; 
+        top: 200px !important;
+    }
+}
+
+.becky_unclick {
+    & > .content {
+        height: 150px;
+        -webkit-transition: height .3s;
+        transition: height .3s;
+        border-top-right-radius: 0px;
+    }
+
+
+}
+
+.br__img--dog .content-hidden {
+    display: none;
+    position: relative;
+    top: 680px;
+    color: $white--solid;
+    text-align: left;
+    font-size: em(30px);
+    font-weight: $font__weight--bold;
+    width: 85%;
+    left: 40px;
+    transition: height .4s ease-in-out;
+}

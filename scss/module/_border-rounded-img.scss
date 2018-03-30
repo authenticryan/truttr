@@ -8,9 +8,9 @@
 }
 
 %bg-img-properties {
-    position: relative;
-    margin-left: 10%;
-    width: 35%;
+    // position: relative;
+    // margin-left: 10%;
+    width: 600px;
     height: 680px;
     display: inline-block;
     vertical-align: top;
@@ -38,6 +38,8 @@
 
     @extend %bg-img-properties;
     @include bg-img("becky.jpg");
+    position: absolute;
+    left: 950px;
 
     & > .content {
         @extend %bg-img-content;
@@ -48,7 +50,8 @@
 
     @extend %bg-img-properties;
     @include bg-img("journal.jpg");
-
+    left: 1700px;;
+    position: absolute;
     & > .content {
         @extend %bg-img-content;
     }

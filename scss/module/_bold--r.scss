@@ -1,10 +1,13 @@
-// bold--l in module/bold--l
-// stands for bold left
+// bold--r in module/bold--r
+// stands for bold right
 
-.bold--l {
+.bold--r {
+    position: absolute;
+    left: 2650px;
     display: inline-block;
     width: 600px;
-    margin-left: 90px;
+    margin-right: 90px;
+    text-align: right;
 
     @include m(heading){
         font-size: em(55px);
@@ -34,20 +37,19 @@
         letter-spacing: 2px;
     }
 
-    // call to action
     @include m(cta){
-        margin-left: 100px;
-        font-size: em(15px);
-        letter-spacing: 2px;
-        display: inline-block;
-        color: $pizazz;
+        position: absolute;
+        bottom: -250px;
+        right: 0;
+        font-size: em(20px);
+        color: $cape-cod;
         font-weight: $font__weight--bold;
+        font-family: $font__weight--xbold--os;
+        letter-spacing: 1px;
 
-        & > img {
-            margin-left: 10px;
-            margin-bottom: 5px;
-            width: 20px;
-            vertical-align: middle;
+        &:hover{
+            color: $cerulean;
         }
     }
+
 }
