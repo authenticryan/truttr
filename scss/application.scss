@@ -1,0 +1,12 @@
+// Sass Doucment. This is the main document for which acts as the root for the sass preprcessor.
+// Naming conventions used - SMACKS and BEM.
+
+// Time 	: 9:15 @ March 29th
+// Author 	: Ryan Dsouza | 7022430431 | authenticryanis@gmail.com
+
+
+@import 'utilities/index';
+@import 'module/index';
+@import 'layout/index';
+@import 'base/index';
+@import 'states/index';

@@ -1,0 +1,39 @@
+// utilities/ config.scss
+
+// Font stack variables
+$font__url--google:     'https://fonts.googleapis.com/css?family=Open+Sans|Roboto';
+$font-family--primary:  'Roboto', sans-serif;
+$font-family--secondary: 'Open Sans', sans-serif;
+
+// Font weights
+$font__weight--thin:        100;        // available for Roboto
+$font__weight--light:       300;        
+$font__weight--regular:     400;        
+$font__weight--medium:      500;        // available for Roboto
+$font__weight--semi-bold:   600;        // available for Open Sans
+$font__weight--bold:        700;        
+$font__weight--xbold--os:   800;        // available for Open Sans
+$font__weight--xbold:       900;        // available for Roboto
+
+// Color Scheeme
+$black--solid: #000000;
+$white--solid: #fff;
+$my-sin: #feb718;
+$pizazz: #f78f00;
+$cerulean: #009bd7;
+$fun-blue: #1b60b0;
+$cape-cod: #404241;
+$scorpion: #606060;
+
+
+// Color usuage
+$color--primary: $cerulean;
+$color--secondary: $my-sin;
+
+
+// Necessary variables
+$base__font-size: 16px;
+$trns-duration: .3s;
+$path--rel: "../img";
+
+

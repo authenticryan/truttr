@@ -1,0 +1,8 @@
+@if variable-exists(font__url--google){
+    @import url($font__url--google);
+}
+
+
+@function em($target, $base: 16px){
+    @return (($target/$base) * 1em);
+}

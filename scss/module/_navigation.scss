@@ -1,0 +1,29 @@
+// This module contains code for the navigatoin segment
+
+.nav{
+    width: 90%;
+    padding: 50px 0 70px;
+    margin: auto;
+    @extend %clearfix;
+
+    @include e(logo){
+        width: 100px;
+        float: left;
+    }
+
+    @include e(sub-menu){
+
+        float: right;
+        
+        & > a {
+            display: inline-block;
+            margin-top: 4px;
+            padding: 0 30px;
+            font-family: $font-family--primary;
+            font-weight: $font__weight--bold;
+            color: $cape-cod;
+            text-decoration: none;
+            font-size: 20px;
+        }
+    }
+}

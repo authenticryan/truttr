@@ -1,0 +1,55 @@
+// border-rounded-img in module/border-rounded-img
+
+@mixin bg-img($img){
+    background-image: url("#{$path--rel}/#{$img}");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+%bg-img-properties {
+    position: relative;
+    margin-left: 10%;
+    width: 35%;
+    height: 680px;
+    display: inline-block;
+    vertical-align: top;
+    border-radius: 0 100px 0 100px;
+}
+
+%bg-img-content{
+    position: absolute;
+    height: 150px;;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: 0;
+    padding: 15px 40px 0 0;
+    background-color: rgba($color: $cerulean, $alpha: .3);
+    font-weight: $font__weight--xbold--os;
+    letter-spacing: 2px;
+    font-size: em(40px);
+    color: $white--solid;
+    border-radius: 0 0 0 100px;
+    text-align: right;
+}
+
+.br__img--dog{
+
+    @extend %bg-img-properties;
+    @include bg-img("becky.jpg");
+
+    & > .content {
+        @extend %bg-img-content;
+    }
+}
+
+.br__img--journal{
+
+    @extend %bg-img-properties;
+    @include bg-img("journal.jpg");
+
+    & > .content {
+        @extend %bg-img-content;
+    }
+}

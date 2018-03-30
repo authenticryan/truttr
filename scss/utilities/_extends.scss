@@ -1,0 +1,9 @@
+// utilites/extends
+
+%clearfix {
+    &::after{
+        display: table;
+        content: "";
+        clear: both;
+    }
+}

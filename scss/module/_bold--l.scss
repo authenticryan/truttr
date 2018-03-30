@@ -1,0 +1,52 @@
+// bold--l in module/bold--l
+// stands for bold left
+
+.bold--l {
+    display: inline-block;
+    width: 40%;
+
+    @include m(heading){
+        font-size: em(55px);
+        font-weight: $font__weight--bold;
+        margin-bottom: 20px;
+        line-height: 65px;
+        letter-spacing: 1px;
+    }
+
+    @include m(content){
+        margin-top: 20px;
+        margin-bottom: 60px;
+        color: $cape-cod;
+        font-weight: $font__weight--light;
+        font-size: em(28px);
+        line-height: 40px;
+    }
+
+    @include m(button){
+        border-radius: 0 20px 0 20px;
+        background: $cerulean;
+        display: inline-block;
+        padding: 18px 34px;
+        color: $white--solid;
+        font-weight: $font__weight--bold;
+        font-size: em(15px);
+        letter-spacing: 2px;
+    }
+
+    // call to action
+    @include m(cta){
+        margin-left: 100px;
+        font-size: em(15px);
+        letter-spacing: 2px;
+        display: inline-block;
+        color: $pizazz;
+        font-weight: $font__weight--bold;
+
+        & > img {
+            margin-left: 10px;
+            margin-bottom: 5px;
+            width: 20px;
+            vertical-align: middle;
+        }
+    }
+}
