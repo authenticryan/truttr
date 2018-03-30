@@ -1,0 +1,58 @@
+// journal under module/ journal
+
+.journal_click {
+    & > .content {
+        height: 680px;
+        -webkit-transition: height .3s;
+        transition: height .3s;
+        border-top-right-radius: 100px;
+    }
+
+    & .journal-content-hidden{
+        display: inline-block !important; 
+        top: 200px !important;
+    }
+}
+
+.journal_unclick {
+    & > .content {
+        height: 150px;
+        -webkit-transition: height .3s;
+        transition: height .3s ease-in-out;
+        border-top-right-radius: 0px;
+    }
+
+
+}
+
+.journal-content-hidden {
+    display: none;
+    position: relative;
+    top: 680px;
+    color: $white--solid;
+    text-align: left;
+    font-size: em(30px);
+    font-weight: $font__weight--bold;
+    width: 85%;
+    left: 40px;
+    transition: height .4s ease-in-out;
+}
+
+.journal--cta {
+    font-size: em(13px);
+    display: inline-block;
+    color: $cape-cod;
+    font-weight: $font__weight--bold;
+    letter-spacing: 1px;
+
+    &:hover {
+        color: $pizazz;
+    }
+
+    &  img {
+        margin-left: 10px;
+        margin-bottom: 5px;
+        width: 20px;
+        vertical-align: middle;
+    }
+}

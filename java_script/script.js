@@ -21,3 +21,21 @@ becky.addEventListener('click', () => {
         becky_count++;
     }
 })
+
+const journal = document.getElementById("journal");
+let journal_count = 0;
+
+journal.addEventListener('click', () => {
+    if ( journal_count %2 == 0){
+        journal.classList.add("journal_click");
+
+        if(journal_count > 1)
+        journal.classList.remove("journal_unclick");
+        journal_count++;
+    } else {
+        journal.classList.remove("journal_click");
+        journal.classList.add("journal_unclick");
+        // becky.innerHTML = "BECKY HAS<br> SOMETHING TO SAY";        
+        journal_count++;
+    }
+})

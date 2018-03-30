@@ -187,7 +187,7 @@
   border-top-right-radius: 100px;
 }
 
-.becky_click .content-hidden {
+.becky_click .becky-content-hidden {
   display: inline-block !important;
   top: 200px !important;
 }
@@ -195,11 +195,11 @@
 .becky_unclick > .content {
   height: 150px;
   -webkit-transition: height .3s;
-  transition: height .3s;
+  transition: height .3s ease-in-out;
   border-top-right-radius: 0px;
 }
 
-.br__img--dog .content-hidden {
+.becky-content-hidden {
   display: none;
   position: relative;
   top: 680px;
@@ -210,6 +210,57 @@
   width: 85%;
   left: 40px;
   transition: height .4s ease-in-out;
+}
+
+.journal_click > .content {
+  height: 680px;
+  -webkit-transition: height .3s;
+  transition: height .3s;
+  border-top-right-radius: 100px;
+}
+
+.journal_click .journal-content-hidden {
+  display: inline-block !important;
+  top: 200px !important;
+}
+
+.journal_unclick > .content {
+  height: 150px;
+  -webkit-transition: height .3s;
+  transition: height .3s ease-in-out;
+  border-top-right-radius: 0px;
+}
+
+.journal-content-hidden {
+  display: none;
+  position: relative;
+  top: 680px;
+  color: #fff;
+  text-align: left;
+  font-size: 1.875em;
+  font-weight: 700;
+  width: 85%;
+  left: 40px;
+  transition: height .4s ease-in-out;
+}
+
+.journal--cta {
+  font-size: 0.8125em;
+  display: inline-block;
+  color: #404241;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.journal--cta:hover {
+  color: #f78f00;
+}
+
+.journal--cta img {
+  margin-left: 10px;
+  margin-bottom: 5px;
+  width: 20px;
+  vertical-align: middle;
 }
 
 html {

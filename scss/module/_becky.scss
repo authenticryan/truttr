@@ -8,7 +8,7 @@
         border-top-right-radius: 100px;
     }
 
-    & .content-hidden{
+    & .becky-content-hidden{
         display: inline-block !important; 
         top: 200px !important;
     }
@@ -18,14 +18,14 @@
     & > .content {
         height: 150px;
         -webkit-transition: height .3s;
-        transition: height .3s;
+        transition: height .3s ease-in-out;
         border-top-right-radius: 0px;
     }
 
 
 }
 
-.br__img--dog .content-hidden {
+.becky-content-hidden {
     display: none;
     position: relative;
     top: 680px;
