@@ -3,8 +3,8 @@
 .journal_click {
     & > .content {
         height: 680px;
-        -webkit-transition: height .3s;
-        transition: height .3s;
+        -webkit-transition: all .3s;
+        transition: all .3s;
         border-top-right-radius: 100px;
     }
 
@@ -17,8 +17,8 @@
 .journal_unclick {
     & > .content {
         height: 150px;
-        -webkit-transition: height .3s;
-        transition: height .3s ease-in-out;
+        -webkit-transition: all .3s;
+        transition: all .3s ease-in-out;
         border-top-right-radius: 0px;
     }
 
@@ -35,19 +35,16 @@
     font-weight: $font__weight--bold;
     width: 85%;
     left: 40px;
-    transition: height .4s ease-in-out;
+    transition: all .4s ease-in-out;
 }
 
 .journal--cta {
     font-size: em(13px);
     display: inline-block;
-    color: $cape-cod;
+    color: $cerulean;
     font-weight: $font__weight--bold;
     letter-spacing: 1px;
 
-    &:hover {
-        color: $pizazz;
-    }
 
     &  img {
         margin-left: 10px;
