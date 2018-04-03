@@ -32,6 +32,8 @@ nav {
     top: 0;
     left: 0;
     right: 0;
+    background-color: $white--solid;
+    z-index: 100000;
 }
 
 main {

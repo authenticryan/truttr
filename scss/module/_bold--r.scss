@@ -52,4 +52,31 @@
         }
     }
 
+    @include mq(small){
+        position: relative;
+        left: 0;
+        text-align: left;
+        width: 100%;
+        margin-top: 70px;
+
+        @include m(heading){
+            font-size: em(40px);
+            line-height: 52px;
+        }
+
+        @include m(content){
+            font-size: em(22px);
+            line-height: 34px;
+            margin-bottom: 40px;
+        }
+
+        @include m(cta){
+            position: relative;
+            bottom: 0;
+            display: block;
+            text-align: center;
+            margin: 30px 0 50px 0;
+        }
+    }
+
 }

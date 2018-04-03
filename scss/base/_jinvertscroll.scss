@@ -14,4 +14,11 @@ body
     bottom: 0;
     left: 0;
     width: 3350px;
+
+    @include mq(small){
+        position: relative;
+        width: 87vw;
+        top: 90px;
+        margin: auto;
+    }
 }
