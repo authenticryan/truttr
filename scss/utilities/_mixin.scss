@@ -11,3 +11,27 @@
         @content;
     }
 }
+
+@mixin mq($break){
+    @if $break == "small"{
+        @media screen and (min-width: 1px) and (max-width: $breakpoint--md) {
+            @content;            
+        }
+    }
+
+    @else if $break == "medium" {
+        @media screen and (min-width: $breakpoint--md) and (max-width: $breakpoint--lg) {
+            @content;            
+        }
+    }
+
+    @else if $break == "large"{
+        @media screen and (min-width: $breakpoint--lg) {
+            @content;            
+        }
+    }
+
+    @else {
+        @error "The breakpoint value you entered, #{$break} is invalid";
+    }
+}

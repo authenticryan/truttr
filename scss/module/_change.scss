@@ -1,0 +1,36 @@
+// .chage to ensure the entire background color changes when the user
+// clicks the hamburger icon
+
+.change {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: $cape-cod;
+
+    // To hide the contents of the background
+    & main {
+        display: none;
+    }
+
+    & .nav__sub-menu{
+        display: block;
+
+        & a {
+            position: relative;
+            top: 100px;
+            text-align: right;
+            width: 100%;
+            color: $white--solid;        
+            font-size: em(50px);
+            line-height: em(25px);
+            font-weight: $font__weight--regular;
+            padding-right: 0;
+        }
+
+        & a:hover {
+            color: $cerulean;
+        }
+    }
+}

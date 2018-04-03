@@ -1,0 +1,30 @@
+//Ham burger icon
+
+.hamburger {
+    margin-top: -8px;
+	cursor: pointer;
+	
+	&__bar--top, &__bar--middle, &__bar--bottom{
+        height: 5px;
+        width: 35px;
+    	background-color: #333;
+    	margin: 6px 0;
+   		transition: 0.4s;
+	}
+	
+	.change &__bar--top{
+		-webkit-transform: rotate(-45deg) translate(-9px, 6px);
+        transform: rotate(-45deg) translate(-9px, 6px);
+        background-color: $white--solid;
+	}
+	
+	.change &__bar--middle {
+		opacity: 0;
+	} 
+	
+	.change &__bar--bottom {
+		-webkit-transform: rotate(45deg) translate(-8px, -8px);
+    	transform: rotate(45deg) translate(-8px, -8px);
+        background-color: $white--solid;
+	}
+}

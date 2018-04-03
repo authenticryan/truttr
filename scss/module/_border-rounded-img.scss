@@ -8,13 +8,17 @@
 }
 
 %bg-img-properties {
-    position: relative;
-    margin-left: 10%;
-    width: 35%;
+    // position: relative;
+    // margin-left: 10%;
+    width: 600px;
     height: 680px;
     display: inline-block;
     vertical-align: top;
     border-radius: 0 100px 0 100px;
+
+    @include mq(small){
+        border-radius: 0 50px 0 50px;
+    }
 }
 
 %bg-img-content{
@@ -32,15 +36,32 @@
     color: $white--solid;
     border-radius: 0 0 0 100px;
     text-align: right;
+
+    @include mq(small){
+        border-radius: 0 0 0 50px;
+        font-size: em(25px);
+        height: 110px;
+        font-weight: $font__weight--bold;
+    }
 }
 
 .br__img--dog{
 
     @extend %bg-img-properties;
     @include bg-img("becky.jpg");
+    position: absolute;
+    left: 950px;
 
     & > .content {
         @extend %bg-img-content;
+    }
+
+    @include mq(small){
+        position: relative;
+        left: 0;
+        width: 100%;
+        margin-top: 80px;        
+        height: 500px;
     }
 }
 
@@ -48,8 +69,17 @@
 
     @extend %bg-img-properties;
     @include bg-img("journal.jpg");
-
+    left: 1700px;;
+    position: absolute;
     & > .content {
         @extend %bg-img-content;
+    }
+
+    @include mq(small){
+        position: relative;
+        left: 0;
+        width: 100%;
+        margin-top: 80px;        
+        height: 500px;
     }
 }

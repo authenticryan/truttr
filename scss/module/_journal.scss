@@ -1,0 +1,85 @@
+// journal under module/ journal
+
+.journal_click {
+    & > .content {
+        height: 680px;
+        -webkit-transition: all .3s;
+        transition: all .3s;
+        border-top-right-radius: 100px;
+    }
+
+    & .journal-content-hidden{
+        display: inline-block !important; 
+        top: 200px !important;
+    }
+
+    @include mq(small){
+        & > .content {
+            height: 500px;            
+            border-top-right-radius: 50px;
+        }
+
+        & > .journal-content-hidden {
+            top: 100px !important;
+        }
+    }
+}
+
+.journal_unclick {
+    & > .content {
+        height: 150px;
+        -webkit-transition: all .3s;
+        transition: all .3s ease-in-out;
+        border-top-right-radius: 0px;
+
+        @include mq(small){
+            height: 110px;
+        }
+    }
+}
+
+.journal-content-hidden {
+    display: none;
+    position: relative;
+    top: 680px;
+    color: $white--solid;
+    text-align: left;
+    font-size: em(30px);
+    font-weight: $font__weight--bold;
+    width: 85%;
+    left: 40px;
+    transition: all .4s ease-in-out;
+
+    @include mq(small){
+        font-size: em(24px);
+        top: 500px;
+        font-weight: $font__weight--regular;
+        width: 90%;
+        left: 20px;
+        margin: auto;
+    }
+}
+
+.journal--cta {
+    font-size: em(13px);
+    display: inline-block;
+    color: $cerulean;
+    font-weight: $font__weight--bold;
+    letter-spacing: 1px;
+
+
+    &  img {
+        margin-left: 10px;
+        margin-bottom: 5px;
+        width: 20px;
+        vertical-align: middle;
+    }
+
+    @include mq(small){
+        font-size: em(12px);
+
+        & img {
+            width: 15px;
+        }
+    }
+}

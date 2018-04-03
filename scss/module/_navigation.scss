@@ -6,6 +6,7 @@
     margin: auto;
     @extend %clearfix;
 
+
     @include e(logo){
         width: 100px;
         float: left;
@@ -24,6 +25,23 @@
             color: $cape-cod;
             text-decoration: none;
             font-size: 20px;
+        }
+    }
+
+    & .hamburger {
+        display: none;
+    }
+
+    @include mq(small){
+
+
+        & .hamburger {
+            display: block;
+            float: right;
+        }
+
+        .nav__sub-menu {
+            display: none;
         }
     }
 }

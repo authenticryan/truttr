@@ -1,0 +1,61 @@
+// becky under module/ becky
+
+.becky_click {
+    & > .content {
+        height: 680px;
+        -webkit-transition: all .3s;
+        transition: all .3s;
+        border-top-right-radius: 100px;
+
+        @include mq(small){
+            height: 500px;
+            border-top-right-radius: 50px;
+        }
+    }
+
+    & .becky-content-hidden{
+        display: inline-block !important; 
+        top: 200px !important;
+        margin: 24px 0;
+
+        @include mq(small){
+            top: 100px !important;
+            font-weight: $font__weight--regular;
+        }
+    }
+}
+
+.becky_unclick {
+    & > .content {
+        height: 150px;
+        -webkit-transition: all .3s;
+        transition: all .3s ease-in-out;
+        border-top-right-radius: 0px;
+
+        @include mq(small){
+            height: 110px;
+        }
+    }
+}
+
+.becky-content-hidden {
+    display: none;
+    position: relative;
+    top: 680px;
+    color: $white--solid;
+    text-align: left;
+    font-size: em(30px);
+    font-weight: $font__weight--bold;
+    width: 85%;
+    left: 40px;
+    transition: all .4s ease-in-out;
+
+    @include mq(small){
+        font-size: em(24px);
+        top: 500px;
+        font-weight: $font__weight--regular;
+        width: 90%;
+        left: 20px;
+        margin: auto;
+    }
+}
