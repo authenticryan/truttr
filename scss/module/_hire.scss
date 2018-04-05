@@ -1,0 +1,67 @@
+// hire.scss under modules/hire
+
+.hire {
+    width: 100%;
+    margin-top: 150px;
+    @extend %clearfix;
+
+    @include mq(small){
+        margin-top: 80px;
+    }
+
+    @include m(heading){
+        font-size: em(55px);
+        font-weight: $font__weight--bold;
+        margin-bottom: 10px;
+        line-height: 65px;
+        width: 40%;
+        letter-spacing: 1px;
+
+        @include mq(small){
+            font-size: em(40px);
+            line-height: 52px;
+            width: 100%;
+        }
+    }
+
+    @include m(content){
+        margin-top: 0px;
+        color: $cape-cod;
+        font-weight: $font__weight--light;
+        font-size: em(28px);
+        line-height: 40px;
+        width: 40%;
+        display: inline-block;
+
+        @include mq(small){
+            font-size: em(22px);
+            line-height: 34px;
+            margin-bottom: 40px;
+            width: 100%;
+        }
+    }
+
+    
+    @include m(content--r){
+        font-size: em(22px);
+        color: $cape-cod;
+        font-weight: $font__weight--light;
+        line-height: 32px;
+        text-align: right;
+        margin-top: 5px;
+        width: 50vw;
+        float: right;
+
+
+        @include mq(small){
+            font-size: em(18px);
+            line-height: 25px;
+            text-align: left;
+            margin-top: 0px;
+            right: 0;
+            width: 100%;
+            position: relative;
+            
+        }
+    }
+}
